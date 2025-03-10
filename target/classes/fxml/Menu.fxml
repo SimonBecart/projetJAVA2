@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.projetjava.projetjava2.controllers.MenuVueControl">
+    
+    <TableView fx:id="tableView" layoutX="20" layoutY="20" prefWidth="600" prefHeight="300">
+        <columns>
+            <TableColumn text="ID" fx:id="idColumn" prefWidth="50"/>
+            <TableColumn text="Nom" fx:id="lastnameColumn" prefWidth="100"/>
+            <TableColumn text="Prénom" fx:id="firstnameColumn" prefWidth="100"/>
+            <TableColumn text="Surnom" fx:id="nicknameColumn" prefWidth="100"/>
+            <TableColumn text="Téléphone" fx:id="phoneColumn" prefWidth="100"/>
+            <TableColumn text="Email" fx:id="emailColumn" prefWidth="150"/>
+        </columns>
+    </TableView>
+
+    <Button text="Ajouter" layoutX="20" layoutY="340" fx:id="addButton"/>
+    <Button text="Modifier" layoutX="120" layoutY="340" fx:id="editButton"/>
+    <Button text="Supprimer" layoutX="220" layoutY="340" fx:id="deleteButton"/>
+</AnchorPane>
